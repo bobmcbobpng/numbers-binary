@@ -24,7 +24,7 @@ input.onGesture(Gesture.Shake, function () {
         y = 4
         while (led.point(x, y)) {
             led.unplot(x, y)
-            bit += 1
+            bit = bit + 1
             x = 4 - bit % 5
             y = 4 - Math.idiv(bit, 5)
         }
