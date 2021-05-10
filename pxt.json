@@ -1,5 +1,5 @@
 {
-    "name": "binary",
+    "name": "numbers-binary",
     "description": "",
     "dependencies": {
         "core": "*",
