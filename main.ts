@@ -3,17 +3,21 @@ input.onPinPressed(TouchPin.P0, function () {
 })
 input.onButtonPressed(Button.A, function () {
     number = number + 100
+    music.playTone(262, music.beat(BeatFraction.Quarter))
     basic.showString("" + (number))
 })
 input.onButtonPressed(Button.AB, function () {
     number = number + 1
+    music.playTone(523, music.beat(BeatFraction.Quarter))
     basic.showString("" + (number))
 })
 input.onButtonPressed(Button.B, function () {
     number = number + 10
+    music.playTone(392, music.beat(BeatFraction.Quarter))
     basic.showString("" + (number))
 })
 input.onGesture(Gesture.Shake, function () {
+    music.playTone(698, music.beat(BeatFraction.Quarter))
     for (let index = 0; index < number; index++) {
         bit = 0
         x = 4
